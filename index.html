@@ -4,37 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css/estilos.css" rel="stylesheet">
     <title>Practica</title>
 </head>
 <body>
+    <!--cabecera-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" width="90" height="90"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsibe">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <h1 class="display-4">Encabezados</h1>
-        <h2>H2 .Encabezados</h2>
-        <h3>Educación a distancia <small class="text-info">una alternativa hoy en día</small></h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe beatae ut deserunt voluptates, obcaecati maxime velit adipisci consectetur eos perspiciatis unde, magni, perferendis vel incidunt aut nesciunt in nam.</p>
-        <p>Lorem <del>ipsum dolor sit</del>  amet consectetur adipisicing elit. Dolorum maiores perspiciatis quod nemo optio at corrupti neque alias impedit, hic minus, rerum molestias quasi enim ipsa dicta, tempore maxime. Expedita.</p>
-        <ul>
-            <li>perro</li>
-            <li>Gato</li>
-            <ul class="list-unstyled">
-                <li>Pequeño</li>
-                <li>Grande</li>
-            </ul>
-            <li>caballo</li>
+            <img src="img/background2.png">
+    </div>
+    <!--jumbotron-->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
         </ul>
-
-        <ul class="list-inline">
-            <li class="list-inline-item">uno</li>
-            <li class="list-inline-item">dos</li>
-            <li class="list-inline-item">tres</li>
-        </ul>
-
-        <h2>Sistema de rejillas</h2>
-        <div class="row">
-            <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veritatis eum cumque molestias, inventore facere vel voluptas ab rerum blanditiis ratione soluta. In, accusamus cum. Minus nisi temporibus est ducimus?</div>
-            <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veritatis eum cumque molestias, inventore facere vel voluptas ab rerum blanditiis ratione soluta. In, accusamus cum. Minus nisi temporibus est ducimus?</div>
-            <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, veritatis eum cumque molestias, inventore facere vel voluptas ab rerum blanditiis ratione soluta. In, accusamus cum. Minus nisi temporibus est ducimus?</div>
+        <div class="carousel-inner active">
+            <div class="carousel-item">
+                <img src="img/logo.png">
+            </div>
+            <div class="carousel-item">
+                <img src="img/logo.png">
+            </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9">
+                <p class="lead">En el trabajo de hoy se presenta una página realizada con html5, bootstrap y css3 para darle un diseño decente y un estilo responsive</p>
+            </div>
+        </div>
+    </div>
+    <!--Sección de introducción-->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Herramientas</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Para la siguiente página utilizamos los siguientes componentes con sus respectivas versiones</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Sección de explicación-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Esta página se hizo con la última versión de html5</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP</h3>
+                <p>Para construir esta página se utilizó la última versión de bootstrap</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Para estilos extras se utilizó la última versión de CSS3</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    
+<!--prueba con botones-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>Sobre Bootstrap</h2>
+                <p>Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end.
+                    Bootstrap es el segundo proyecto más destacado en GitHub1​ y es usado por la NASA y la MSNBC entre otras organizaciones.</p>
+                <br>
+                <a href="https://getbootstrap.com" class="btn btn-primary">más</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/educacion_virtual.jpg" class="img-fluid" >
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--Imágen fija en el fondo
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Conclusiones</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+    -->
+    <!--sección con dos columnas-->>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <p>Al hacer una comparación entre una página hecha con css desde cero y una con ayuda de bootstrap, se puede notar claramente la diferencia en cada aspecto, sin dudar la herramienta de bootstrap ha convertido el desarrollo de front-end a algo rápido, fácil y de buena calidad, ya que con unos cuantos comandos logramos construir una página en la que ya se puede empezar a trabajar y sobre todo que es responsiva y puede usarse en cualquier dispositivo.
+                Aún se puede seguir utilizando el css3 para otros estilos y darle más valor gráfico a la página que es lo que llama a los usuarios a seguir entrando en ella, la combinación de las 3 ayudan a mejorar este aspecto de una gran forma</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/educacion_virtual2.jpg" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+
+    <!--contactos-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Encuentranos en redes sociales</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img src="img/logo.png" width="60" height="60">
+                    <hr class="light">
+                    <p>0987654321</p>
+                    <p>cuentadegmail@gmail.com</p>
+                    <p>desde mi casa</p>
+                </div>
+                <div class="col-lg-6">
+                    <hr class="light">
+                    <h5>Días disponibles</h5>
+                    <hr class="light">
+                    <p>Lunes - vierner: 10am - 18pm</p>
+                    <p>sábado: 10am - 16pm</p>
+                    <p>domingo: cerrado</p>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <hr class="light">
+                <h5>&copy; Fernando Saldaña</h5>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
